@@ -1,6 +1,6 @@
-# terraform-azurerm-{module}
+# terraform-azurerm-foobar
 
-Terraform module which creates an Azure ...
+Terraform module which creates an Azure foobar.
 
 ## Usage
 
@@ -19,7 +19,15 @@ resource "azurerm_resource_group" "example" {
   location = "northeurope"
 }
 
-...
+module "foobar" {
+  source = "github.com/equinor/terraform-azurerm-foobar"
+
+  application = local.application
+  environment = local.environment
+
+  location            = azurerm_resource_group.this.location
+  resource_group_name = azurerm_resource_group.this.name
+}
 ```
 
 ## Test
