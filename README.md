@@ -1,4 +1,4 @@
-# terraform-azurerm-{module name}
+# terraform-azurerm-{module}
 
 Terraform module which creates an Azure ...
 
