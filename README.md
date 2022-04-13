@@ -1,6 +1,6 @@
 # terraform-azurerm-foobar
 
-Terraform module which creates an Azure foobar.
+Terraform module which creates an Azure Foobar.
 
 ## Usage
 
