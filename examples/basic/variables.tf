@@ -1,5 +1,5 @@
 variable "location" {
-  description = "The supported Azure location where the resources exist."
+  description = "The location to create the resources in."
   type        = string
   default     = "northeurope"
 }
