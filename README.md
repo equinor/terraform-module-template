@@ -1,6 +1,6 @@
 # Azure Foobar Terraform module
 
-Terraform module which creates and Azure Foobar resource.
+Terraform module which creates an Azure Foobar resource.
 
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
