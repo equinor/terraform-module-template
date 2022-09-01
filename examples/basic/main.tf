@@ -12,7 +12,7 @@ resource "azurerm_resource_group" "this" {
 }
 
 module "foobar" {
-  # source = "github.com/equinor/terraform-azurerm-foobar"
+  # source = "github.com/equinor/terraform-azurerm-foobar?ref=v0.0.0"
   source = "../.."
 
   resource_group_name = azurerm_resource_group.this.name
