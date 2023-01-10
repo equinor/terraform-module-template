@@ -1,6 +1,3 @@
-# Basic example
+# Basic Example
 
-Terraform configuration which creates an Azure Foobar resource with the following features:
-
-- Feature 1
-- Feature 2
+Example Terraform configuration which shows the basic usage of this module.

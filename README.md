@@ -1,5 +1,5 @@
-# Terraform module for Azure Foobar
+# Terraform Module Template
 
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
 
-Terraform module which creates Azure Foobar resources.
+Template repository for Terraform modules.
