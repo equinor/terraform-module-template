@@ -49,3 +49,7 @@ See [examples](examples).
     ```console
     go test -timeout 60m
     ```
+
+## Contributing
+
+See [Contributing guidelines](CONTRIBUTING.md).
