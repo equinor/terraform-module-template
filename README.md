@@ -1,35 +1,16 @@
-# Terraform Module Template
+# Azure Storage Terraform Module
 
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
 [![Equinor Terraform Baseline](https://img.shields.io/badge/Equinor%20Terraform%20Baseline-1.0.0-blueviolet)](https://github.com/equinor/terraform-baseline)
 
-Template repository for Terraform modules.
-
-## Usage
-
-See [examples](examples).
+Terraform module which creates an Azure Storage account.
 
 ## Development
 
-1. Read [this document](https://code.visualstudio.com/docs/devcontainers/containers).
-
-1. Clone this repository.
-
-1. Configure Terraform variables in a file `.devcontainer/devcontainer.env`:
-
-    ```env
-    TF_VAR_resource_group_name=
-    TF_VAR_location=
-    ```
-
-1. Open repository in dev container.
-
-## Testing
-
-1. Change to the test directory:
+1. Clone this repository:
 
     ```console
-    cd test
+    git clone https://github.com/equinor/terraform-azurerm-storage.git
     ```
 
 1. Login to Azure:
@@ -44,12 +25,29 @@ See [examples](examples).
     az account set -s <SUBSCRIPTION_NAME_OR_ID>
     ```
 
-1. Run tests:
+1. Set environment variables:
 
     ```console
-    go test -timeout 60m
+    export TF_VAR_resource_group_name=<RESOURCE_GROUP_NAME>
+    export TF_VAR_location=<LOCATION>
     ```
+
+## Testing
+
+1. Initialize working directory:
+
+    ```console
+    terraform init
+    ```
+
+1. Execute tests:
+
+    ```console
+    terraform test
+    ```
+
+    See [`terraform test` command documentation](https://developer.hashicorp.com/terraform/cli/commands/test) for options.
 
 ## Contributing
 
-See [Contributing guidelines](CONTRIBUTING.md).
+See [Contributing guidelines](https://github.com/equinor/terraform-baseline/blob/main/CONTRIBUTING.md).
